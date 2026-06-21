@@ -1,11 +1,363 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Haohan Min</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haohan Min</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#f8fafc;
+color:#222;
+line-height:1.8;
+}
+
+.container{
+width:75%;
+margin:auto;
+}
+
+section{
+padding:80px 0;
+}
+
+h1{
+font-size:55px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+h2{
+font-size:36px;
+margin-bottom:40px;
+color:#111827;
+}
+
+a{
+text-decoration:none;
+color:#2563eb;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+min-height:100vh;
+background:linear-gradient(135deg,#f8fafc,#e0ecff);
+}
+
+.profile{
+width:270px;
+height:270px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.intro{
+font-size:18px;
+max-width:800px;
+color:#374151;
+}
+
+.highlight{
+color:#2563eb;
+font-weight:600;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+margin-bottom:35px;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.paper{
+display:flex;
+gap:30px;
+align-items:center;
+}
+
+.paper img{
+width:260px;
+border-radius:15px;
+}
+
+.paper-info h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.paper-info p{
+color:#666;
+}
+
+.note{
+margin-bottom:30px;
+color:#666;
+font-size:15px;
+}
+
+.exp{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.logo{
+width:120px;
+}
+
+.exp h3{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+color:#666;
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Haohan Min</h1>
-    <p>PhD Student</p>
-    <p>Embodied AI | Micro Robotics | PINN</p>
+
+<!-- About -->
+<section class="hero">
+
+<img src="images/profile.jpg" class="profile">
+
+<div>
+
+<h1>Haohan Min</h1>
+
+<div class="intro">
+
+I received my B.Eng. degree in <span class="highlight">Intelligent Manufacturing Engineering</span> from <b>Soochow University</b> and am currently pursuing my Master's degree in Intelligent Manufacturing at <b>Tsinghua University</b>.
+
+<br><br>
+
+I have gained industrial experience in large model applications and search algorithms through internships at <span class="highlight">Momenta</span>, <span class="highlight">ByteDance</span>, and <span class="highlight">Meituan</span>.
+
+<br><br>
+
+As the first/co-first author, I have published three papers at <b>IROS 2026</b>, one of the premier conferences in robotics.
+
+<br><br>
+
+<b>Research Interests:</b>
+
+<ul>
+<li>Search & Recommendation</li>
+<li>Large Language Model Applications</li>
+<li>Autonomous Driving</li>
+<li>Embodied Intelligence</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>Selected Publications</h2>
+
+<div class="note">
+* indicates co-first authorship.&nbsp;&nbsp;&nbsp;† indicates corresponding author.
+</div>
+
+<div class="card paper">
+
+<img src="images/paper1.png">
+
+<div class="paper-info">
+
+<h3>
+MicroVLA: A Vision-Language-Action Framework for Microrobotic Navigation Considering Inter-Particle Micro-Force Fields
+</h3>
+
+<p>
+Haohan Min*, xxx*, xxx†
+<br>
+IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026
+</p>
+
+</div>
+</div>
+
+
+<div class="card paper">
+
+<img src="images/paper2.png">
+
+<div class="paper-info">
+
+<h3>
+MG-VTLA: A Vision-Tactile-Language-Action Framework for Contact-Robust Robotic Micro-Grasping
+</h3>
+
+<p>
+Haohan Min*, xxx*, xxx†
+<br>
+IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026
+</p>
+
+</div>
+</div>
+
+
+<div class="card paper">
+
+<img src="images/paper3.png">
+
+<div class="paper-info">
+
+<h3>
+ISIM: A Micro-nano Scale Vision-based Dataset for In-situ SEM Intelligent Manipulation
+</h3>
+
+<p>
+Haohan Min*, xxx*, xxx†
+<br>
+IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026
+</p>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>Experience</h2>
+
+<div class="card exp">
+
+<img src="images/momenta.png" class="logo">
+
+<div>
+
+<h3>Momenta</h3>
+
+Research Intern
+
+<br><br>
+
+Focused on multimodal large model applications and intelligent driving algorithms for autonomous systems.
+
+</div>
+
+</div>
+
+
+<div class="card exp">
+
+<img src="images/bytedance.png" class="logo">
+
+<div>
+
+<h3>ByteDance</h3>
+
+Algorithm Intern
+
+<br><br>
+
+Worked on search and recommendation systems, retrieval algorithms, and LLM-based applications.
+
+</div>
+
+</div>
+
+
+<div class="card exp">
+
+<img src="images/meituan.png" class="logo">
+
+<div>
+
+<h3>Meituan</h3>
+
+Algorithm Intern
+
+<br><br>
+
+Focused on search ranking models, recommendation systems, and large language model applications.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>Research Interests</h2>
+
+<div class="card">
+
+<ul style="font-size:20px">
+
+<li>Search & Recommendation</li>
+
+<li>Large Language Models and AI Agents</li>
+
+<li>Autonomous Driving</li>
+
+<li>Embodied Intelligence</li>
+
+<li>Vision-Language-Action Models</li>
+
+<li>Micro/Nano Robotics</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<div class="footer">
+
+© 2026 Haohan Min · Tsinghua University
+
+</div>
+
 </body>
 </html>
